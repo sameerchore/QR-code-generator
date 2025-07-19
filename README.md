@@ -4,6 +4,11 @@ This is a simple web app that generates a QR Code from user input (text or URL) 
 
 ---
 
+## 🔗 Live Demo
+👉 [Try it here]([https://sameerchore.github.io/Plain-js-Virtual-Assistance/](https://sameerchore.github.io/QR-code-generator/))
+
+---
+
 ## 🧠 How It Works
 
 1. User enters text or a link in the input box.
@@ -22,4 +27,6 @@ This is a simple web app that generates a QR Code from user input (text or URL) 
 
 ```js
 qetImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + inputText.value;
+
+Made with ❤️ by [Sameer Chore](https://github.com/sameerchore)
 
