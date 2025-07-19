@@ -22,3 +22,4 @@ This is a simple web app that generates a QR Code from user input (text or URL) 
 
 ```js
 qetImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + inputText.value;
+
