@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter your Text or URL</p>
+        <input type="text" id="inputText" placeholder="Text or URL">
+        <div id="imgBox">
+            <img src="" id="qetImg">
+        </div>
+        <button onclick="generateQRCode()">Generate QR Code</button>
+
+    </div>
+    <script>
+        const inputText =document.getElementById('inputText');
+        const qetImg = document.getElementById('qetImg');
+        const button = document.querySelector('button');
+
+        function generateQRCode() {
+
+            if (inputText.value.trim()===""){
+                alert("Please enter a valid text or URL");
+                return;
+            }
+            qetImg.src= "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + inputText.value;
+            // getImg is id of the img tag and applying ".src" property it whole sends links to img tag
+
+            imgBox.classList.add("show-img"); //thiss adds class name to the imgBox div to show the image
+        }
+
+    </script>
+</body>
+</html>

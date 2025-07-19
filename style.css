@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262a2f;
+
+}
+
+.container {
+    width: 400px;
+    padding: 24px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: #fff;
+    /* border-radius: 10px;  */
+}
+
+.container p {
+    font-size: 20px;
+    /* color: #262a2f; */
+    font-weight: 600;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    margin-bottom: 20px;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    /* margin: 10px;     */
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #262a2f;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    background: #262a2f;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+#imgBox {
+   width: 200px;
+   padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+    margin: 10px auto; /* Add this line to always center */
+}
+
+#imgBox img {
+    width: 100%;
+    padding: 10px;
+    /* margin : 10px auto; */
+
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #262a2f;
+
+}
